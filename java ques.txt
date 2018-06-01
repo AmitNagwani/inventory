@@ -1,0 +1,554 @@
+Master list of Java interview questions - 115 questions
+
+115 questions total, not for the weak. Covers everything from basics to JDBC connectivity, AWT and JSP.
+
+What is the difference between procedural and object-oriented programs?- a) In procedural program, programming logic follows certain procedures and the instructions are executed one after another. In OOP program, unit of program is object, which is nothing but combination of data and code. b) In procedural program, data is exposed to the whole program whereas in OOPs program, it is accessible with in the object and which in turn assures the security of the code.
+
+What are Encapsulation, Inheritance and Polymorphism?- Encapsulation is the mechanism that binds together code and data it manipulates and keeps both safe from outside interference and misuse. Inheritance is the process by which one object acquires the properties of another object. Polymorphism is the feature that allows one interface to be used for general class actions.
+
+What is the difference between Assignment and Initialization?- Assignment can be done as many times as desired whereas initialization can be done only once.
+
+
+
+What is OOPs?- Object oriented programming organizes a program around its data, i. e. , objects and a set of well defined interfaces to that data. An object-oriented program can be characterized as data controlling access to code.
+
+What are Class, Constructor and Primitive data types?- Class is a template for multiple objects with similar features and it is a blue print for objects. It defines a type of object according to the data the object can hold and the operations the object can perform. Constructor is a special kind of method that determines how an object is initialized when created. Primitive data types are 8 types and they are: byte, short, int, long, float, double, boolean, char.
+
+What is an Object and how do you allocate memory to it?- Object is an instance of a class and it is a software unit that combines a structured set of data with a set of operations for inspecting and manipulating that data. 
+When an object is created using new operator, memory is allocated to it.
+
+What is the difference between constructor and method?- Constructor will be automatically invoked when an object is created whereas method has to be called explicitly.
+
+What are methods and how are they defined?- Methods are functions that operate on instances of classes in which they are defined. Objects can communicate with each other using methods and can call methods in other classes. Method definition has four parts. They are name of the method, type of object or primitive type the method returns, a list of parameters and the body of the method. A method’s signature is a combination of the first three parts mentioned above.
+
+What is the use of bin and lib in JDK?- Bin contains all tools such as javac, appletviewer, awt tool, etc., whereas lib contains API and all packages.
+
+What is casting?- Casting is used to convert the value of one type to another.
+
+How many ways can an argument be passed to a subroutine and explain them?- An argument can be passed in two ways. They are passing by value and passing by reference. Passing by value: This method copies the value of an argument into the formal parameter of the subroutine. Passing by reference: In this method, a reference to an argument (not the value of the argument) is passed to the parameter.
+
+What is the difference between an argument and a parameter?- While defining method, variables passed in the method are called parameters. While using those methods, values passed to those variables are called arguments.
+
+What are different types of access modifiers?- public: Any thing declared as public can be accessed from anywhere. private: Any thing declared as private can’t be seen outside of its class. protected: Any thing declared as protected can be accessed by classes in the same package and subclasses in the other packages. default modifier : Can be accessed only to classes in the same package.
+
+What is final, finalize() and finally?- final : final keyword can be used for class, method and variables. A final class cannot be subclassed and it prevents other programmers from subclassing a secure class to invoke insecure methods. A final method can’t be overridden. A final variable can’t change from its initialized value. finalize() : finalize() method is used just before an object is destroyed and can be called just prior to garbage collection. finally : finally, a key word used in exception handling, creates a block of code that will be executed after a try/catch block has completed and before the code following the try/catch block. The finally block will execute whether or not an exception is thrown. For example, if a method opens a file upon exit, then you will not want the code that closes the file to be bypassed by the exception-handling mechanism. This finally keyword is designed to address this contingency.
+
+What is UNICODE?- Unicode is used for internal representation of characters and strings and it uses 16 bits to represent each other.
+
+What is Garbage Collection and how to call it explicitly?- When an object is no longer referred to by any variable, java automatically reclaims memory used by that object. This is known as garbage collection. System. gc() method may be used to call it explicitly.
+
+What is finalize() method?- finalize () method is used just before an object is destroyed and can be called just prior to garbage collection.
+
+What are Transient and Volatile Modifiers?- Transient: The transient modifier applies to variables only and it is not stored as part of its object’s Persistent state. Transient variables are not serialized. Volatile: Volatile modifier applies to variables only and it tells the compiler that the variable modified by volatile can be changed unexpectedly by other parts of the program.
+
+What is method overloading and method overriding?- Method overloading: When a method in a class having the same method name with different arguments is said to be method overloading. Method overriding : When a method in a class having the same method name with same arguments is said to be method overriding.
+
+What is difference between overloading and overriding?- a) In overloading, there is a relationship between methods available in the same class whereas in overriding, there is relationship between a superclass method and subclass method. b) Overloading does not block inheritance from the superclass whereas overriding blocks inheritance from the superclass. c) In overloading, separate methods share the same name whereas in overriding, subclass method replaces the superclass. d) Overloading must have different method signatures whereas overriding must have same signature.
+
+What is meant by Inheritance and what are its advantages?- Inheritance is the process of inheriting all the features from a class. The advantages of inheritance are reusability of code and accessibility of variables and methods of the super class by subclasses.
+
+What is the difference between this() and super()?- this() can be used to invoke a constructor of the same class whereas super() can be used to invoke a super class constructor.
+
+What is the difference between superclass and subclass?- A super class is a class that is inherited whereas sub class is a class that does the inheriting.
+
+What modifiers may be used with top-level class?- public, abstract and final can be used for top-level class.
+
+What are inner class and anonymous class?- Inner class : classes defined in other classes, including those defined in methods are called inner classes. An inner class can have any accessibility including private. Anonymous class : Anonymous class is a class defined inside a method without a name and is instantiated and declared in the same place and cannot have explicit constructors.
+
+What is a package?- A package is a collection of classes and interfaces that provides a high-level layer of access protection and name space management.
+
+What is a reflection package?- java. lang. reflect package has the ability to analyze itself in runtime.
+
+What is interface and its use?- Interface is similar to a class which may contain method’s signature only but not bodies and it is a formal set of method and constant declarations that must be defined by the class that implements it. Interfaces are useful for: a)Declaring methods that one or more classes are expected to implement b)Capturing similarities between unrelated classes without forcing a class relationship. c)Determining an object’s programming interface without revealing the actual body of the class.
+
+What is an abstract class?- An abstract class is a class designed with implementation gaps for subclasses to fill in and is deliberately incomplete.
+
+What is the difference between Integer and int?- a) Integer is a class defined in the java. lang package, whereas int is a primitive data type defined in the Java language itself. Java does not automatically convert from one to the other. b) Integer can be used as an argument for a method that requires an object, whereas int can be used for calculations.
+
+What is a cloneable interface and how many methods does it contain?- It is not having any method because it is a TAGGED or MARKER interface.
+
+What is the difference between abstract class and interface?- a) All the methods declared inside an interface are abstract whereas abstract class must have at least one abstract method and others may be concrete or abstract. b) In abstract class, key word abstract must be used for the methods whereas interface we need not use that keyword for the methods. c) Abstract class must have subclasses whereas interface can’t have subclasses.
+
+Can you have an inner class inside a method and what variables can you access?- Yes, we can have an inner class inside a method and final variables can be accessed.
+
+What is the difference between String and String Buffer?- a) String objects are constants and immutable whereas StringBuffer objects are not. b) String class supports constant strings whereas StringBuffer class supports growable and modifiable strings.
+
+What is the difference between Array and vector?- Array is a set of related data type and static whereas vector is a growable array of objects and dynamic.
+
+What is the difference between exception and error?- The exception class defines mild error conditions that your program encounters. Exceptions can occur when trying to open the file, which does not exist, the network connection is disrupted, operands being manipulated are out of prescribed ranges, the class file you are interested in loading is missing. The error class defines serious error conditions that you should not attempt to recover from. In most cases it is advisable to let the program terminate when such an error is encountered.
+
+What is the difference between process and thread?- Process is a program in execution whereas thread is a separate path of execution in a program.
+
+What is multithreading and what are the methods for inter-thread communication and what is the class in which these methods are defined?- Multithreading is the mechanism in which more than one thread run independent of each other within the process. wait (), notify () and notifyAll() methods can be used for inter-thread communication and these methods are in Object class. wait() : When a thread executes a call to wait() method, it surrenders the object lock and enters into a waiting state. notify() or notifyAll() : To remove a thread from the waiting state, some other thread must make a call to notify() or notifyAll() method on the same object.
+
+What is the class and interface in java to create thread and which is the most advantageous method?- Thread class and Runnable interface can be used to create threads and using Runnable interface is the most advantageous method to create threads because we need not extend thread class here.
+
+What are the states associated in the thread?- Thread contains ready, running, waiting and dead states.
+
+What is synchronization?- Synchronization is the mechanism that ensures that only one thread is accessed the resources at a time.
+
+When you will synchronize a piece of your code?- When you expect your code will be accessed by different threads and these threads may change a particular data causing data corruption.
+
+What is deadlock?- When two threads are waiting each other and can’t precede the program is said to be deadlock.
+
+What is daemon thread and which method is used to create the daemon thread?- Daemon thread is a low priority thread which runs intermittently in the back ground doing the garbage collection operation for the java runtime system. setDaemon method is used to create a daemon thread.
+Are there any global variables in Java, which can be accessed by other part of your program?- No, it is not the main method in which you define variables. Global variables is not possible because concept of encapsulation is eliminated here.
+
+What is an applet?- Applet is a dynamic and interactive program that runs inside a web page displayed by a java capable browser.
+
+What is the difference between applications and applets?- a)Application must be run on local machine whereas applet needs no explicit installation on local machine. b)Application must be run explicitly within a java-compatible virtual machine whereas applet loads and runs itself automatically in a java-enabled browser. d)Application starts execution with its main method whereas applet starts execution with its init method. e)Application can run with or without graphical user interface whereas applet must run within a graphical user interface.
+
+How does applet recognize the height and width?- Using getParameters() method.
+
+When do you use codebase in applet?- When the applet class file is not in the same directory, codebase is used.
+
+What is the lifecycle of an applet?- init() method - Can be called when an applet is first loaded start() method - Can be called each time an applet is started. paint() method - Can be called when the applet is minimized or maximized. stop() method - Can be used when the browser moves off the applet’s page. destroy() method - Can be called when the browser is finished with the applet.
+
+How do you set security in applets?- using setSecurityManager() method
+
+What is an event and what are the models available for event handling?- An event is an event object that describes a state of change in a source. In other words, event occurs when an action is generated, like pressing button, clicking mouse, selecting a list, etc. There are two types of models for handling events and they are: a) event-inheritance model and b) event-delegation model
+
+What are the advantages of the model over the event-inheritance model?- The event-delegation model has two advantages over the event-inheritance model. They are: a)It enables event handling by objects other than the ones that generate the events. This allows a clean separation between a component’s design and its use. b)It performs much better in applications where many events are generated. This performance improvement is due to the fact that the event-delegation model does not have to be repeatedly process unhandled events as is the case of the event-inheritance.
+
+What is source and listener?- source : A source is an object that generates an event. This occurs when the internal state of that object changes in some way. listener : A listener is an object that is notified when an event occurs. It has two major requirements. First, it must have been registered with one or more sources to receive notifications about specific types of events. Second, it must implement methods to receive and process these notifications.
+
+What is adapter class?- An adapter class provides an empty implementation of all methods in an event listener interface. Adapter classes are useful when you want to receive and process only some of the events that are handled by a particular event listener interface. You can define a new class to act listener by extending one of the adapter classes and implementing only those events in which you are interested. For example, the MouseMotionAdapter class has two methods, mouseDragged()and mouseMoved(). The signatures of these empty are exactly as defined in the MouseMotionListener interface. If you are interested in only mouse drag events, then you could simply extend MouseMotionAdapter and implement mouseDragged() .
+
+What is meant by controls and what are different types of controls in AWT?- Controls are components that allow a user to interact with your application and the AWT supports the following types of controls: Labels, Push Buttons, Check Boxes, Choice Lists, Lists, Scrollbars, Text Components. These controls are subclasses of Component.
+
+What is the difference between choice and list?- A Choice is displayed in a compact form that requires you to pull it down to see the list of available choices and only one item may be selected from a choice. A List may be displayed in such a way that several list items are visible and it supports the selection of one or more list items.
+
+What is the difference between scrollbar and scrollpane?- A Scrollbar is a Component, but not a Container whereas Scrollpane is a Conatiner and handles its own events and perform its own scrolling.
+
+What is a layout manager and what are different types of layout managers available in java AWT?- A layout manager is an object that is used to organize components in a container. The different layouts are available are FlowLayout, BorderLayout, CardLayout, GridLayout and GridBagLayout.
+How are the elements of different layouts organized?- FlowLayout: The elements of a FlowLayout are organized in a top to bottom, left to right fashion. BorderLayout: The elements of a BorderLayout are organized at the borders (North, South, East and West) and the center of a container. CardLayout: The elements of a CardLayout are stacked, on top of the other, like a deck of cards. GridLayout: The elements of a GridLayout are of equal size and are laid out using the square of a grid. GridBagLayout: The elements of a GridBagLayout are organized according to a grid. However, the elements are of different size and may occupy more than one row or column of the grid. In addition, the rows and columns may have different sizes.
+
+Which containers use a Border layout as their default layout?- Window, Frame and Dialog classes use a BorderLayout as their layout.
+
+Which containers use a Flow layout as their default layout?- Panel and Applet classes use the FlowLayout as their default layout.
+
+What are wrapper classes?- Wrapper classes are classes that allow primitive types to be accessed as objects.
+
+What are Vector, Hashtable, LinkedList and Enumeration?- Vector : The Vector class provides the capability to implement a growable array of objects. Hashtable : The Hashtable class implements a Hashtable data structure. A Hashtable indexes and stores objects in a dictionary using hash codes as the object’s keys. Hash codes are integer values that identify objects. LinkedList: Removing or inserting elements in the middle of an array can be done using LinkedList. A LinkedList stores each object in a separate link whereas an array stores object references in consecutive locations. Enumeration: An object that implements the Enumeration interface generates a series of elements, one at a time. It has two methods, namely hasMoreElements() and nextElement(). HasMoreElemnts() tests if this enumeration has more elements and nextElement method returns successive elements of the series.
+
+What is the difference between set and list?- Set stores elements in an unordered way but does not contain duplicate elements, whereas list stores elements in an ordered way but may contain duplicate elements.
+
+What is a stream and what are the types of Streams and classes of the Streams?- A Stream is an abstraction that either produces or consumes information. There are two types of Streams and they are: Byte Streams: Provide a convenient means for handling input and output of bytes. Character Streams: Provide a convenient means for handling input & output of characters. Byte Streams classes: Are defined by using two abstract classes, namely InputStream and OutputStream. Character Streams classes: Are defined by using two abstract classes, namely Reader and Writer.
+What is the difference between Reader/Writer and InputStream/Output Stream?- The Reader/Writer class is character-oriented and the InputStream/OutputStream class is byte-oriented.
+What is an I/O filter?- An I/O filter is an object that reads from one stream and writes to another, usually altering the data in some way as it is passed from one stream to another.
+What is serialization and deserialization?- Serialization is the process of writing the state of an object to a byte stream. Deserialization is the process of restoring these objects.
+What is JDBC?- JDBC is a set of Java API for executing SQL statements. This API consists of a set of classes and interfaces to enable programs to write pure Java Database applications.
+What are drivers available?- a) JDBC-ODBC Bridge driver b) Native API Partly-Java driver c) JDBC-Net Pure Java driver d) Native-Protocol Pure Java driver
+What is the difference between JDBC and ODBC?- a) OBDC is for Microsoft and JDBC is for Java applications. b) ODBC can’t be directly used with Java because it uses a C interface. c) ODBC makes use of pointers which have been removed totally from Java. d) ODBC mixes simple and advanced features together and has complex options for simple queries. But JDBC is designed to keep things simple while allowing advanced capabilities when required. e) ODBC requires manual installation of the ODBC driver manager and driver on all client machines. JDBC drivers are written in Java and JDBC code is automatically installable, secure, and portable on all platforms. f) JDBC API is a natural Java interface and is built on ODBC. JDBC retains some of the basic features of ODBC.
+What are the types of JDBC Driver Models and explain them?- There are two types of JDBC Driver Models and they are: a) Two tier model and b) Three tier model Two tier model: In this model, Java applications interact directly with the database. A JDBC driver is required to communicate with the particular database management system that is being accessed. SQL statements are sent to the database and the results are given to user. This model is referred to as client/server configuration where user is the client and the machine that has the database is called as the server. Three tier model: A middle tier is introduced in this model. The functions of this model are: a) Collection of SQL statements from the client and handing it over to the database, b) Receiving results from database to the client and c) Maintaining control over accessing and updating of the above.
+What are the steps involved for making a connection with a database or how do you connect to a database?a) Loading the driver : To load the driver, Class. forName() method is used. Class. forName(”sun. jdbc. odbc. JdbcOdbcDriver”); When the driver is loaded, it registers itself with the java. sql. DriverManager class as an available database driver. b) Making a connection with database: To open a connection to a given database, DriverManager. getConnection() method is used. Connection con = DriverManager. getConnection (”jdbc:odbc:somedb”, “user”, “password”); c) Executing SQL statements : To execute a SQL query, java. sql. statements class is used. createStatement() method of Connection to obtain a new Statement object. Statement stmt = con. createStatement(); A query that returns data can be executed using the executeQuery() method of Statement. This method executes the statement and returns a java. sql. ResultSet that encapsulates the retrieved data: ResultSet rs = stmt. executeQuery(”SELECT * FROM some table”); d) Process the results : ResultSet returns one row at a time. Next() method of ResultSet object can be called to move to the next row. The getString() and getObject() methods are used for retrieving column values: while(rs. next()) { String event = rs. getString(”event”); Object count = (Integer) rs. getObject(”count”);
+What type of driver did you use in project?- JDBC-ODBC Bridge driver (is a driver that uses native(C language) libraries and makes calls to an existing ODBC driver to access a database engine).
+What are the types of statements in JDBC?- Statement: to be used createStatement() method for executing single SQL statement PreparedStatement — To be used preparedStatement() method for executing same SQL statement over and over. CallableStatement — To be used prepareCall() method for multiple SQL statements over and over.
+What is stored procedure?- Stored procedure is a group of SQL statements that forms a logical unit and performs a particular task. Stored Procedures are used to encapsulate a set of operations or queries to execute on database. Stored procedures can be compiled and executed with different parameters and results and may have any combination of input/output parameters.
+How to create and call stored procedures?- To create stored procedures: Create procedure procedurename (specify in, out and in out parameters) BEGIN Any multiple SQL statement; END; To call stored procedures: CallableStatement csmt = con. prepareCall(”{call procedure name(?,?)}”); csmt. registerOutParameter(column no. , data type); csmt. setInt(column no. , column name) csmt. execute();
+What is servlet?- Servlets are modules that extend request/response-oriented servers, such as java-enabled web servers. For example, a servlet might be responsible for taking data in an HTML order-entry form and applying the business logic used to update a company’s order database.
+What are the classes and interfaces for servlets?- There are two packages in servlets and they are javax. servlet and
+What is the difference between an applet and a servlet?- a) Servlets are to servers what applets are to browsers. b) Applets must have graphical user interfaces whereas servlets have no graphical user interfaces.
+What is the difference between doPost and doGet methods?- a) doGet() method is used to get information, while doPost() method is used for posting information. b) doGet() requests can’t send large amount of information and is limited to 240-255 characters. However, doPost()requests passes all of its data, of unlimited length. c) A doGet() request is appended to the request URL in a query string and this allows the exchange is visible to the client, whereas a doPost() request passes directly over the socket connection as part of its HTTP request body and the exchange are invisible to the client.
+What is the life cycle of a servlet?- Each Servlet has the same life cycle: a) A server loads and initializes the servlet by init () method. b) The servlet handles zero or more client’s requests through service() method. c) The server removes the servlet through destroy() method.
+Who is loading the init() method of servlet?- Web server
+What are the different servers available for developing and deploying Servlets?- a) Java Web Server b) JRun g) Apache Server h) Netscape Information Server i) Web Logic
+How many ways can we track client and what are they?- The servlet API provides two ways to track client state and they are: a) Using Session tracking and b) Using Cookies.
+What is session tracking and how do you track a user session in servlets?- Session tracking is a mechanism that servlets use to maintain state about a series requests from the same user across some period of time. The methods used for session tracking are: a) User Authentication - occurs when a web server restricts access to some of its resources to only those clients that log in using a recognized username and password. b) Hidden form fields - fields are added to an HTML form that are not displayed in the client’s browser. When the form containing the fields is submitted, the fields are sent back to the server. c) URL rewriting - every URL that the user clicks on is dynamically modified or rewritten to include extra information. The extra information can be in the form of extra path information, added parameters or some custom, server-specific URL change. d) Cookies - a bit of information that is sent by a web server to a browser and which can later be read back from that browser. e) HttpSession- places a limit on the number of sessions that can exist in memory. This limit is set in the session. maxresidents property.
+What is Server-Side Includes (SSI)?- Server-Side Includes allows embedding servlets within HTML pages using a special servlet tag. In many servlets that support servlets, a page can be processed by the server to include output from servlets at certain points inside the HTML page. This is accomplished using a special internal SSINCLUDE, which processes the servlet tags. SSINCLUDE servlet will be invoked whenever a file with an. shtml extension is requested. So HTML files that include server-side includes must be stored with an . shtml extension.
+What are cookies and how will you use them?- Cookies are a mechanism that a servlet uses to have a client hold a small amount of state-information associated with the user. a) Create a cookie with the Cookie constructor: public Cookie(String name, String value) b) A servlet can send a cookie to the client by passing a Cookie object to the addCookie() method of HttpServletResponse: public void HttpServletResponse. addCookie(Cookie cookie) c) A servlet retrieves cookies by calling the getCookies() method of HttpServletRequest: public Cookie[ ] HttpServletRequest. getCookie().
+Is it possible to communicate from an applet to servlet and how many ways and how?- Yes, there are three ways to communicate from an applet to servlet and they are: a) HTTP Communication(Text-based and object-based) b) Socket Communication c) RMI Communication
+What is connection pooling?- With servlets, opening a database connection is a major bottleneck because we are creating and tearing down a new connection for every page request and the time taken to create connection will be more. Creating a connection pool is an ideal approach for a complicated servlet. With a connection pool, we can duplicate only the resources we need to duplicate rather than the entire servlet. A connection pool can also intelligently manage the size of the pool and make sure each connection remains valid. A number of connection pool packages are currently available. Some like DbConnectionBroker are freely available from Java Exchange Works by creating an object that dispenses connections and connection Ids on request. The ConnectionPool class maintains a Hastable, using Connection objects as keys and Boolean values as stored values. The Boolean value indicates whether a connection is in use or not. A program calls getConnection() method of the ConnectionPool for getting Connection object it can use; it calls returnConnection() to give the connection back to the pool.
+Why should we go for interservlet communication?- Servlets running together in the same server communicate with each other in several ways. The three major reasons to use interservlet communication are: a) Direct servlet manipulation - allows to gain access to the other currently loaded servlets and perform certain tasks (through the ServletContext object) b) Servlet reuse - allows the servlet to reuse the public methods of another servlet. c) Servlet collaboration - requires to communicate with each other by sharing specific information (through method invocation)
+Is it possible to call servlet with parameters in the URL?- Yes. You can call a servlet with parameters in the syntax as (?Param1 = xxx || m2 = yyy).
+What is Servlet chaining?- Servlet chaining is a technique in which two or more servlets can cooperate in servicing a single request. In servlet chaining, one servlet’s output is piped to the next servlet’s input. This process continues until the last servlet is reached. Its output is then sent back to the client.
+How do servlets handle multiple simultaneous requests?- The server has multiple threads that are available to handle requests. When a request comes in, it is assigned to a thread, which calls a service method (for example: doGet(), doPost() and service()) of the servlet. For this reason, a single servlet object can have its service methods called by many threads at once.
+What is the difference between TCP/IP and UDP?- TCP/IP is a two-way communication between the client and the server and it is a reliable and there is a confirmation regarding reaching the message to the destination. It is like a phone call. UDP is a one-way communication only between the client and the server and it is not a reliable and there is no confirmation regarding reaching the message to the destination. It is like a postal mail.
+What is Inet address?- Every computer connected to a network has an IP address. An IP address is a number that uniquely identifies each computer on the Net. An IP address is a 32-bit number.
+What is Domain Naming Service(DNS)?- It is very difficult to remember a set of numbers(IP address) to connect to the Internet. The Domain Naming Service(DNS) is used to overcome this problem. It maps one particular IP address to a string of characters. For example, www. mascom. com implies com is the domain name reserved for US commercial sites, moscom is the name of the company and www is the name of the specific computer, which is mascom’s server.
+What is URL?- URL stands for Uniform Resource Locator and it points to resource files on the Internet. URL has four components: http://www. address. com:80/index.html, where http - protocol name, address - IP address or host name, 80 - port number and index.html - file path.
+What is RMI and steps involved in developing an RMI object?- Remote Method Invocation (RMI) allows java object that executes on one machine and to invoke the method of a Java object to execute on another machine. The steps involved in developing an RMI object are: a) Define the interfaces b) Implementing these interfaces c) Compile the interfaces and their implementations with the java compiler d) Compile the server implementation with RMI compiler e) Run the RMI registry f) Run the application
+What is RMI architecture?- RMI architecture consists of four layers and each layer performs specific functions: a) Application layer - contains the actual object definition. b) Proxy layer - consists of stub and skeleton. c) Remote Reference layer - gets the stream of bytes from the transport layer and sends it to the proxy layer. d) Transportation layer - responsible for handling the actual machine-to-machine communication.
+what is UnicastRemoteObject?- All remote objects must extend UnicastRemoteObject, which provides functionality that is needed to make objects available from remote machines.
+Explain the methods, rebind() and lookup() in Naming class?- rebind() of the Naming class(found in java. rmi) is used to update the RMI registry on the server machine. Naming. rebind(”AddSever”, AddServerImpl); lookup() of the Naming class accepts one argument, the rmi URL and returns a reference to an object of type AddServerImpl.
+What is a Java Bean?- A Java Bean is a software component that has been designed to be reusable in a variety of different environments.
+What is a Jar file?- Jar file allows to efficiently deploying a set of classes and their associated resources. The elements in a jar file are compressed, which makes downloading a Jar file much faster than separately downloading several uncompressed files. The package java. util. zip contains classes that read and write jar files.
+What is BDK?- BDK, Bean Development Kit is a tool that enables to create, configure and connect a set of set of Beans and it can be used to test Beans without writing a code.
+What is JSP?- JSP is a dynamic scripting capability for web pages that allows Java as well as a few special tags to be embedded into a web file (HTML/XML, etc). The suffix traditionally ends with .jsp to indicate to the web server that the file is a JSP files. JSP is a server side technology - you can’t do any client side validation with it. The advantages are: a) The JSP assists in making the HTML more functional. Servlets on the other hand allow outputting of HTML but it is a tedious process. b) It is easy to make a change and then let the JSP capability of the web server you are using deal with compiling it into a servlet and running it.
+What are JSP scripting elements?- JSP scripting elements lets to insert Java code into the servlet that will be generated from the current JSP page. There are three forms: a) Expressions of the form <%= expression %> that are evaluated and inserted into the output, b) Scriptlets of the form<% code %>that are inserted into the servlet’s service method, and c) Declarations of the form <%! Code %>that are inserted into the body of the servlet class, outside of any existing methods.
+What are JSP Directives?- A JSP directive affects the overall structure of the servlet class. It usually has the following form:<%@ directive attribute=”value” %> However, you can also combine multiple attribute settings for a single directive, as follows:<%@ directive attribute1=”value1? attribute 2=”value2? . . . attributeN =”valueN” %> There are two main types of directive: page, which lets to do things like import classes, customize the servlet superclass, and the like; and include, which lets to insert a file into the servlet class at the time the JSP file is translated into a servlet
+What are Predefined variables or implicit objects?- To simplify code in JSP expressions and scriptlets, we can use eight automatically defined variables, sometimes called implicit objects. They are request, response, out, session, application, config, pageContext, and page.
+What are JSP ACTIONS?- JSP actions use constructs in XML syntax to control the behavior of the servlet engine. You can dynamically insert a file, reuse JavaBeans components, forward the user to another page, or generate HTML for the Java plugin. Available actions include: jsp:include - Include a file at the time the page is requested. jsp:useBean - Find or instantiate a JavaBean. jsp:setProperty - Set the property of a JavaBean. jsp:getProperty - Insert the property of a JavaBean into the output. jsp:forward - Forward the requester to a newpage. Jsp: plugin - Generate browser-specific code that makes an OBJECT or EMBED
+How do you pass data (including JavaBeans) to a JSP from a servlet?- (1) Request Lifetime: Using this technique to pass beans, a request dispatcher (using either “include” or forward”) can be called. This bean will disappear after processing this request has been completed. Servlet: request. setAttribute(”theBean”, myBean); RequestDispatcher rd = getServletContext(). getRequestDispatcher(”thepage. jsp”); rd. forward(request, response); JSP PAGE:<jsp: useBean id=”theBean” scope=”request” class=”. . . . . ” />(2) Session Lifetime: Using this technique to pass beans that are relevant to a particular session (such as in individual user login) over a number of requests. This bean will disappear when the session is invalidated or it times out, or when you remove it. Servlet: HttpSession session = request. getSession(true); session. putValue(”theBean”, myBean); /* You can do a request dispatcher here, or just let the bean be visible on the next request */ JSP Page:<jsp:useBean id=”theBean” scope=”session” class=”. . . ” /> 3) Application Lifetime: Using this technique to pass beans that are relevant to all servlets and JSP pages in a particular app, for all users. For example, I use this to make a JDBC connection pool object available to the various servlets and JSP pages in my apps. This bean will disappear when the servlet engine is shut down, or when you remove it. Servlet: GetServletContext(). setAttribute(”theBean”, myBean); JSP PAGE:<jsp:useBean id=”theBean” scope=”application” class=”. . . ” />
+How can I set a cookie in JSP?- response. setHeader(”Set-Cookie”, “cookie string”); To give the response-object to a bean, write a method setResponse (HttpServletResponse response) - to the bean, and in jsp-file:<% bean. setResponse (response); %>
+How can I delete a cookie with JSP?- Say that I have a cookie called “foo, ” that I set a while ago & I want it to go away. I simply: <% Cookie killCookie = new Cookie(”foo”, null); KillCookie. setPath(”/”); killCookie. setMaxAge(0); response. addCookie(killCookie); %>
+How are Servlets and JSP Pages related?- JSP pages are focused around HTML (or XML) with Java codes and JSP tags inside them. When a web server that has JSP support is asked for a JSP page, it checks to see if it has already compiled the page into a servlet. Thus, JSP pages become servlets and are transformed into pure Java and then compiled, loaded into the server and executed.
+This entry was posted in Java. Bookmark the permalink. Post a comment or leave a trackback: Trackback URL.
+« Some VB interview questionsGeneral UNIX interview questions » 
+
+ 
+44 COMMENTS ON MASTER LIST OF JAVA INTERVIEW QUESTIONS - 115 QUESTIONS
+
+
+Dhananjay
+Posted 8/1/2005 at 4:15 am | Permalink
+Any application developed in JAVA and using native code will be plateform independent ?
+
+dhinesh
+Posted 8/8/2005 at 7:08 am | Permalink
+Actually in java no operator overloading.but we are using increment(++) and
+decrement(–) operator.this also operator overloading. why that contradiction?
+
+dhinesh
+Posted 8/8/2005 at 7:11 am | Permalink
+Actually in java no operator overloading.but we are using increment(++) and
+decrement(Ã¢â‚¬â€œ-) operator.this also operator overloading. why that contradiction?
+
+KOtresh
+Posted 8/13/2005 at 12:19 am | Permalink
+There is no operator overloading in JAVA, but operator + is used as arithmetic addition and concatination operator. why ? pls clarify this
+
+srinivasulu
+Posted 8/26/2005 at 12:31 am | Permalink
+difference ServletContext and PageContext
+
+Kotresh
+Posted 8/31/2005 at 5:15 am | Permalink
+Default Layout for Jframe(swings)?
+
+Ajay
+Posted 9/19/2005 at 12:34 am | Permalink
+difference between Directive and action
+
+Siya
+Posted 10/27/2005 at 3:56 pm | Permalink
+I don’t know where this site has been all my life!!!It has clear answers to almost every question revolving around Java.Keep it up!
+
+Prabhakar Peri
+Posted 11/18/2005 at 1:16 am | Permalink
+Hi all, this is the reply to questions 2,3, and 4.
+“Operator overloading is not available in Java” does not mean that there is no operator overloading in Java. It mean that the programmer cannot implement operator overloading. It is in built available in the language.
+Actually you cannot find any programming language without operator overloading. Strictly no programming language is excempted. Have a look at the following example.
+3 + 2
+2.5 + 3.0
+These two expressions can be processed by any language. The same + symbol is used to add two integral numbers as well as to add two real numbers. Is it not overloading? The + operator is overloaded to operate on integrals and real numbers. This applies to all languages.
+Hence, operator overloading is there in Java, but in built. It cannot be extended by the programmer as you can do in C++.
+
+Ed Parrish
+Posted 11/18/2005 at 6:19 pm | Permalink
+Question 32 has an incorrect answer. Java does not require an abstract method to make an abstract class. Java only requires the keyword abstract. Also, your point c) would be better stated that abstract classes must have subclasses whereas interfaces must be implemented.
+
+Yelena Cherdak
+Posted 12/1/2005 at 11:26 am | Permalink
+Question 82 is not correct. You wrote:
+What is the difference between doPost and doGet methods?
+>>> doPost and doGet methods are servlet methods that respond to GET and POST HTTP requests. And your explanation is correct if you talk about differences between GET and POST HTTP requests. Servlet methods are called on Server side and work with requests objects on the server retrieving data from requests and
+perform whatever business logic is required.
+- a) doGet() method is used to get information, while doPost() method is used for posting information. b) doGet() requests canÃ¢â‚¬â„¢t send large amount of information and is limited to 240-255 characters. However, doPost()requests passes all of its data, of unlimited length. c) A doGet() request is appended to the request URL in a query string and this allows the exchange is visible to the client, whereas a doPost() request passes directly over the socket connection as part of its HTTP request body and the exchange are invisible to the client.
+
+KingKoder
+Posted 4/23/2006 at 2:20 pm | Permalink
+Geez, this list of questions answered more of my questions than the 4 java books I own.
+
+siva rama krishna
+Posted 5/23/2006 at 1:36 am | Permalink
+Still some basics need to covered like SWING VS AWT etc…
+
+Durgaprasad
+Posted 6/8/2006 at 3:45 pm | Permalink
+servlet context contains the servlet’s view of web application within which servlet is running and it can be used to log events etc where as page context provides access to all the namespaces associated with a JSP page and access to several page attributes
+
+Azhar
+Posted 7/6/2006 at 12:25 pm | Permalink
+Great questions.You dont have to open up book if you are preparing for an interview.
+
+Samrat
+Posted 10/16/2006 at 6:45 am | Permalink
+There is an wrong in Q 32..
+Q32)What is the difference between abstract class and interface?-
+Answer: All the methods declared inside an interface are abstract whereas abstract class must have at least one abstract method and others may be concrete or abstract.
+As far my knowledge,
+abstract class must have at least one abstract method is wrong.But the vice-versa is true.If there is an abstract method in a class,you must have to declare that class as abstract class.
+Abstract class may or may not contain abstract class.
+
+sowmya
+Posted 10/27/2006 at 7:14 am | Permalink
+Can anybody explain me about HashTable,hashCode() in java.If possible with some simple code example.Plz let me know.
+Thanks
+
+jlk
+Posted 12/6/2006 at 2:24 am | Permalink
+TCP/IP can not be compared to UDP. Both TCP and UDP sit at layer 3 over IP.
+
+Prapti
+Posted 1/11/2007 at 1:56 am | Permalink
+To answer Dinesh’s question:
+It is true that in Java, we don’t have Operator Overloading. That means a user can not perform operator overloading operations himself, like we do in C++. But internally Java has it’s operator overloading behaviors or methods defines, which can be utilized by the user.To be more clear, user can not create their own operator overloading programs.
+Same way, in Java, there is no pointer concept as we have in C. But we do have object references. So, here the approach is different, which is explained.
+
+amrita
+Posted 2/21/2007 at 2:12 pm | Permalink
+the answer regarding interface and abstract class is still not clear. which is correct?
+
+KOTRESH
+Posted 2/23/2007 at 12:30 am | Permalink
+Can v instantiate Math class?
+
+chinmay
+Posted 3/7/2007 at 6:52 am | Permalink
+example of interface:
+public interface aa
+{
+public void do( );//abstract methods,but no need
+public void show( );//to use abstract key word
+}
+public class bb implements aa
+{
+public void do( )
+{
+//declaration part
+}
+public void show( )
+{
+//declaration part
+}
+}
+example of abstract class:
+public abstract class aa
+{
+public void do()// non static method
+{
+//declaration part
+}
+abstract void show ();
+}
+public class bb extends aa
+{
+void show( )
+{
+//declaration part
+}
+}
+
+martinus
+Posted 4/5/2007 at 3:31 pm | Permalink
+I think most of these questions are only useful when you need a brainless coder. When you want somebody who really knows what he is doing, I would ask something along these questions:
+* Show me a sample of your work
+* Do you use test driven development? Why / Why not?
+* What other programming languages do you know?
+* What do you like, what do you hate about Java?
+* What important design patterns do you use?
+* Do you work with JUnit, Checkstyle, PMD, Findbugs, etc?
+
+Looser
+Posted 4/16/2007 at 3:28 am | Permalink
+Hey martinus,
+You are talking very high level. Dont u know that u need to know all these things before coding. Design patterns and unit testing comes later. If the code style and standards are bad, what is the use of doing such work which will not be scalable.
+Please do answer your own questions in this forum, except for the first one so that everybody else can know what you(and probably people like you) would expect.
+
+Madan
+Posted 5/21/2007 at 12:50 am | Permalink
+Connection con=DriverManager.getConnection(url).
+please explain this one in Interfaces.
+
+sumit
+Posted 5/26/2007 at 10:47 am | Permalink
+Diff between abstract class and interface
+abstract class may contain non abstract methods where as methods in interface are abstract.
+when class is declared abstract,it must have atleast 1 abstract method
+
+velavan
+Posted 7/12/2007 at 2:29 am | Permalink
+what type data can be stored in cookies?
+can store byte data in cookies?
+how can store int data in cookies?
+can send int data through doget() ?
+
+Marcus
+Posted 7/26/2007 at 7:28 pm | Permalink
+Martinus is correct although for the sake of the people reading he probably should have went into more detail about the point he was making.
+I’m a Java Architect and have been for many years for companies such as IBM, BellSouth etc…. and what I found is that the people who are asking these I/O and basic language level questions can’t answer the questions themselves. Who care if you know all the implicit variables and etc… The question is can you use them and even better yet, how fast on you on finding the information you need. I could probably write a book on Java or C++ but how many people can retain all the information related to a language like Java. I’ve never seen a seasoned developer in an interview throw out questions like explain the difference between abstract and interface! Nobody cares if you can memorize it! The question is do you truely understand the concept of OO programming and can you use it.
+I’ve seen developers under me come to an interview session with 50 questions that they themselves downloaded from the internet and have the nerve to try and rattle a potential employee. Once they ask the question I usually ask them to elaborate on the correct answer. That stopped it everytime. Never condem someone for something you are lacking in yourself.
+
+Deepak Kalra
+Posted 8/20/2007 at 8:14 am | Permalink
+Difference between Interface & Abstract Class
+First Definition of both.
+Interface–> This is an pure abstract class. Means that a class which has all the functions as abstract.
+Abstract Class–> This is a class which has zero or more function declared as abstract. By abstract it means that the abstract keyword should be there which the function signature & also no implementation should be given for the function. i.e. public void function(); No opening ‘}’ & No closing ‘}’.
+now why we need these 2 different things when they look almost same?
+These two things looks almost like but they are not totally same. The situations they are used is totally different. take the example of events in AWT. All the listeners are interfaces. Interfaces are very well suited for the environment where you have to implement call back mechanism.
+You can also look at this way that when you have implementation for few of the functions of you class & remaining functionality depends on the environment or depends on the client who is using use abstract class. Also you can use abstract class when you have implementation for all you functions but the use of it depends on the client by adding some feature to it.
+You can use interface when you have no implementation with you.
+Now i know you all will raise a question that then why not to use abstract class as interface?
+Well i have an answer for that too but you try it. Hint: Multiple Inheritance.
+
+Bikram Singh
+Posted 9/14/2007 at 10:50 pm | Permalink
+Well, To decide whether to use Interfaces or Abstract classes :
+Go for abstract classes if for some of the methods you want to provide the implementation and some you want to be implemented by the subclasses.
+Interfaces are good when you want to declare constants throughout the application and to implement best coding practices (That 10 different developers working on different modules of same application, will use same methods name and constants name).
+Above all, use Interfaces when u want to use any other superclass in ur class.
+
+Joe Blow
+Posted 1/3/2008 at 9:04 am | Permalink
+Well,
+As an interviewer, I don’t ask any of these questions, since it’s just a memorization process and anybody can read and remember answers to these questions before an interview. So during my interviews candidates write code and discuss what they did. Based on that I grade them, like on a written/verbal exam. This shows me that a person can think. Based on that I make my decision. So if a person can’t solve (note: doesn’t have to be completely correct) not complicating problem and can’t discuss ab what, how and why he or she did something, that person is out the door. I usually look for people who can think and explain what they did and just memorize the answers.
+….
+
+peter lawrey
+Posted 3/14/2008 at 4:43 am | Permalink
+> What is the difference between Assignment and Initialization?
+Proper initialization is only done once.Ã‚Â  However, you can access a variable before it has been properly initialised.Ã‚Â  If you do this you see the default initialisation value for the variable or constant.
+e.g.
+static {
+Ã‚Â Ã‚Â Ã‚Â Ã‚Â Ã‚Â Ã‚Â Ã‚Â  System.out.println("TEXT="+getText());
+Ã‚Â Ã‚Â Ã‚Â  }
+Ã‚Â Ã‚Â Ã‚Â  public static String getTextProperty() {
+Ã‚Â Ã‚Â Ã‚Â Ã‚Â Ã‚Â Ã‚Â Ã‚Â  return System.getProperty("text","Hello World" );
+Ã‚Â Ã‚Â Ã‚Â  }
+Ã‚Â Ã‚Â Ã‚Â  public static final String TEXT = getTextProperty();
+Ã‚Â Ã‚Â Ã‚Â  public static String getText() {
+Ã‚Â Ã‚Â Ã‚Â Ã‚Â Ã‚Â Ã‚Â Ã‚Â  return TEXT;
+Ã‚Â Ã‚Â Ã‚Â  }
+Ã‚Â Ã‚Â Ã‚Â  static {
+Ã‚Â Ã‚Â Ã‚Â Ã‚Â Ã‚Â Ã‚Â Ã‚Â  System.out.println("TEXT="+getText());
+Ã‚Â Ã‚Â Ã‚Â  }
+Ã‚Â Ã‚Â Ã‚Â  public static void main(String… args) {
+Ã‚Â Ã‚Â Ã‚Â  }
+This prints
+TEXT=null
+TEXT=Hello World
+> What is casting?- Casting is used to convert the value of one type to another
+Casting primatives converts the type (changes it)
+Casting objects just checks the object is an instanceof the Class, but doesn’t convert or alter it.
+> How many ways can an argument be passed to a subroutine and explain them?
+An argument can be passed to a method by setting a field and then calling the method. This is common in Factory objects where values in the factory are set first and then a creation method is called. (rather have a method for every possible combination of arguments you could provide)
+As argument can be passed by context.Ã‚Â  The simplest example is System.getProperties(), however most IOC containers have their own more flexible way of doing this.
+> What are different types of access modifiers?
+The default (no modifier) for an interface is the same as public.
+> What is Garbage Collection and how to call it explicitly?- When an object is no longer referred to by any variable,…
+Actually when the variable is unreachable it is collected.
+e.g. say A refers to B and B refers to A, but nother else does.Ã‚Â  This will be cleaned up even though these obejcts have references to them.
+> What is finalize() method?
+The finalize() method can be called at any time.Ã‚Â  However it should be called before being cleaned up,, but this is not guarenteed.
+> What is the difference between String and String Buffer?
+StringBuilder is prefered to StringBuffer from Java 5 as it is not synchronized. A feature of Java 7 called escape analysis should mean the JVM can workout that synchronization is not required in many cases, but there is some doubt that it provides the performance improvement claimed.
+> What are the states associated in the thread?
+As of Java 5, The states of a Thread are defined in Thread.State.Ã‚Â  These are NEW, RUNNABLE, BLOCKED, WAITING, TIMED_WAITING, TERMINATED.
+> What is daemon thread and which method is used to create the daemon thread?- Daemon thread is a low priority thread
+There are a number of demon threads and a Thread has the priority it is given, regardless of whether it is a demon or not.
+> Any application developed in JAVA and using native code will be plateform independent ?
+No. some operations are platform dependant. E.g. Runtime.exec() depends on what commands you have installed.
+> we are using increment(++) and decrement(Ã¢â‚¬â€œ) operator.this also operator overloading
+It isn’t overloaded, it is part of the language.
+> abstract class must have at least one abstract method.
+> … when class is declared abstract,it must have atleast 1 abstract method
+This works (but isn’t very useful)
+public abstract class NoAbstractMethods {
+}
+> Can you instantiate Math class?
+I assume you mean an object which is an instanceof Math.Ã‚Â  The Math class is loaded and initialised as soon as you use one of its methods.
+You shouldn’t need to create a Math object, the constructor for Math is private and all its methods are static. (You could using reflections but don’t)
+
+peter lawrey
+Posted 3/14/2008 at 4:59 am | Permalink
+BTW: The constructor for Class is private and reflections prevents you from creating it, even though reflections will allows the construction of other objects with private constructors.
+The only way to create a Class is using a ClassLoader.
+
+Sangeetha
+Posted 3/28/2008 at 1:53 am | Permalink
+Hi All.
+Pls clarify my doubt.
+In overloading we are having one method as
+Ã‚Â int methodA (int a, int b)
+
+Are we allowed to have another method by only changing the return type and not the parameters passed.
+double methodA(int c, int d)
+
+peter lawrey
+Posted 4/3/2008 at 1:07 am | Permalink
+> Are we allowed to have another method by only changing the return type.
+Let me ask you; what would you want it to do?
+Which method should the following call if it was overloaded as you suggest?
+System.out.println(methodA(1,2));
+You could try it and see what happens.
+
+devanshi
+Posted 4/14/2008 at 4:16 am | Permalink
+hey Sangeetha.for your q:Are we allowed to have another method by only changing the return type and not the parameters passed
+answer: no its not allowed as method overloading can be only in 3 cases-:
+1)diff no of parameters
+2)diff type of parameters
+3)diff positioning of parameters
+it doesnt allow based on return type as in ur q
+
+Chaitanya
+Posted 4/24/2008 at 3:28 am | Permalink
+About Q33
+I have some more differences
+1)Interface can be instantiated, whereas abstract class cannot
+2)Interface has only constant variables and abstract class can have all variable that a normal class has
+3) When we implement interfaces we have to implement all its methods but while implementing abstract class we can choose to ignore some methods
+please do let me know whether these are right. Thanx n Regards
+
+Sangeetha
+Posted 4/25/2008 at 12:17 am | Permalink
+hi devanshi,
+As u mentiooned, diff positioning of parameters is allowed in method overloading, whereas when i tried this code.
+amethod (String a, int b, int c)
+and another method as
+amethod (String a, int c, int b)
+it throws me as a duplicate amethod in type
+overloading. Pls clarify my understanding on different positioning of parameters.
+
+peter lawrey
+Posted 4/25/2008 at 4:24 pm | Permalink
+> Chaitanya
+1) You cannot instantiate an instance or an abstract class.
+2) An interface can only have public static final variables, public abstract methods and public nested classes/interfaces
+3) When implementing a concrete class you have to implement all abstract methods. For an interface all methods in the interface are abstract (but not methods in Object by default), whereas in abstract classes not all methods need to be abstract, possibly none of them.
+
+peter lawrey
+Posted 4/25/2008 at 4:26 pm | Permalink
+> Sangeetha
+Only the types of the parameters are important for overloading. The names of the parameters are not important.
+Changing the names around makes no difference if their types are the same.
+
+peter lawrey
+Posted 4/25/2008 at 4:26 pm | Permalink
+> 1) You cannot instantiate an instance or an abstract class.
+should read
+1) You cannot instantiate an interface or an abstract class.
+
+Galaxius
+Posted 6/1/2008 at 11:16 am | Permalink
+I agree with Martinus and MArcus above. I interview candidates very frequently and have noticed that the quality of the developer who can answer, say all these 115 questions vs a quality of a developer who can answer half of these but is more successful in answering problem solving and logical questions is enormous!!!
+I would normally approach an interview candidate with a relatively easier problem solving question like, say, if you have 2 variables and u want to swap them without introducing a third variable, object or any other storage mechanism..how would u do it.
+if he cannot answer a relatively simply problem solving q, i can see a profile of his quality emerging.
+some of my favorite tacks are ” give me a query that will conform to the following rules - say, return a row if 3 columns match(ie user has specified three values all of which exist in a row in the db), return the next sub level row if 2 columns match and the third column is not specified and so on!!
+finally, in java - if i have to query the person’s knowledge .. i stick to threads/innerclasses and classloading. I’ve noticed 99% of java codes ignore this 1% of language essentials (probably because its harder? ) .. this trinite of questioning still gives me a clear black and white picture whether the candidate is selected or shown the door!!!
+Usually, the substandard developer interview is over in 15 minutes flat!!!!
+
+KOtresh
+Posted 6/3/2008 at 2:47 am | Permalink
+Refer to Q.No. 35.
+Hi Sangeetha. This is the basic question in function overloading.
+In function Overloading two function should have different signatures.
+SIgnatures means prototype.
+But here return type is not considered.
+e.g., int fun(int,int); int fun(int,char)
+is function overloading
+int fun(int,int); float fun(int,int)
+is not function overloading
+
+Ranjitha
+Posted 6/23/2008 at 6:48 am | Permalink
+Refer to Q.No. 39
+Hi Sangeetha,
+When u say different positioning of parameters, we mean that
+int fun(int i,char c); int fun(char c,int i), these functions can co exist in the same class. if u observe the parameter types are same but are positioned differently in the argument list.
+ONE TRACKBACK
+
+By Are You a Master Java Developer?? | Personal Insights on Web 2.0, Blogging, and Business on 4/30/2007 at 9:04 pm
+[...] latest “Stumble” resulted in being sent to this Master list of Java interview questions - 115 questions. Obviously, I’m not a master java dev — the 10 or so questions I looked at meant little [...]
