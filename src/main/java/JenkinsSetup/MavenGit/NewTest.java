@@ -21,6 +21,7 @@ public class NewTest {
 	  System.setProperty("webdriver.gecko.driver", "D:\\Selenium\\Drivers\\geckodriver.exe");
 	  driver = new FirefoxDriver();
 	  
+	  System.out.println("Before Classs....");
   }
 
   @AfterClass
